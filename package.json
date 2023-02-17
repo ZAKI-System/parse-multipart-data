@@ -9,7 +9,8 @@
     "prebuild": "rimraf dist",
     "build": "tsc --project tsconfig.json",
     "test": "nyc mocha --require ts-node/register test/*.spec.ts",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "postinstall": "npm run build"
   },
   "nyc": {
     "all": true,
