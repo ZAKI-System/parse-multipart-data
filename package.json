@@ -10,7 +10,7 @@
     "build": "tsc --project tsconfig.json",
     "test": "nyc mocha --require ts-node/register test/*.spec.ts",
     "semantic-release": "semantic-release",
-    "postinstall": "(echo %CD%) && cd node_modules/parse-multipart-data && npm run build"
+    "prepare": "npm run build"
   },
   "nyc": {
     "all": true,
